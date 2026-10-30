@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --surface-canvas: #FAF9F5;
+    --surface-card: #FFFFFF;
+    --surface-obsidian: #141517;
+    --border-hairline: #E6E3D8;
+  }
+
+  body {
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color: var(--surface-canvas);
+    color: #141517;
+  }
+}
+
+.font-sans {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-serif {
+  font-family: "Instrument Serif", Georgia, serif;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Explicit Cohere x Antigravity Token Utilities (ensures instant Vite HMR without restart) */
+.bg-volcanic-950 { background-color: #0B0C0E; }
+.bg-volcanic-900 { background-color: #141517; }
+.hover\:bg-volcanic-800:hover { background-color: #23262B; }
+.text-volcanic-950 { color: #0B0C0E !important; }
+.text-volcanic-900 { color: #141517; }
+.hover\:text-volcanic-900:hover { color: #141517; }
+.border-volcanic-900 { border-color: #141517; }
+.fill-volcanic-950 { fill: #0B0C0E; }
+
+.bg-alabaster-50 { background-color: #FAF9F5; }
+.bg-alabaster-50\/50 { background-color: rgba(250, 249, 245, 0.5); }
+.hover\:bg-alabaster-50:hover { background-color: #FAF9F5; }
+.hover\:bg-alabaster-50\/60:hover { background-color: rgba(250, 249, 245, 0.6); }
+.hover\:bg-alabaster-50\/80:hover { background-color: rgba(250, 249, 245, 0.8); }
+.bg-alabaster-100 { background-color: #F3F1EA; }
+.bg-alabaster-100\/70 { background-color: rgba(243, 241, 234, 0.7); }
+.bg-alabaster-100\/80 { background-color: rgba(243, 241, 234, 0.8); }
+.bg-alabaster-100\/90 { background-color: rgba(243, 241, 234, 0.9); }
+.hover\:bg-alabaster-100:hover { background-color: #F3F1EA; }
+.bg-alabaster-200 { background-color: #E6E3D8; }
+.hover\:bg-alabaster-200:hover { background-color: #E6E3D8; }
+.border-alabaster-200 { border-color: #E6E3D8; }
+.border-alabaster-300 { border-color: #D5D0C0; }
+.divide-alabaster-200 > :not([hidden]) ~ :not([hidden]) { border-color: #E6E3D8; }
+
+.bg-coral-50 { background-color: #FFF4F1; }
+.bg-coral-50\/60 { background-color: rgba(255, 244, 241, 0.6); }
+.bg-coral-50\/80 { background-color: rgba(255, 244, 241, 0.8); }
+.bg-coral-100 { background-color: #FFE4DE; }
+.bg-coral-500 { background-color: #FF6B4A; }
+.bg-coral-500\/20 { background-color: rgba(255, 107, 74, 0.2); }
+.bg-coral-500\/35 { background-color: rgba(255, 107, 74, 0.35); }
+.bg-coral-500\/80 { background-color: rgba(255, 107, 74, 0.8); }
+.text-coral-100 { color: #FFE4DE; }
+.text-coral-500 { color: #FF6B4A; }
+.text-coral-600 { color: #E85332; }
+.text-coral-700 { color: #C43E20; }
+.border-coral-500\/25 { border-color: rgba(255, 107, 74, 0.25); }
+.border-coral-500\/30 { border-color: rgba(255, 107, 74, 0.3); }
+.border-coral-500\/40 { border-color: rgba(255, 107, 74, 0.4); }
+.ring-coral-100 { --tw-ring-color: #FFE4DE; }
+.ring-coral-500\/25 { --tw-ring-color: rgba(255, 107, 74, 0.25); }
+.fill-coral-100 { fill: #FFE4DE; }
+
+.bg-architectural-grid {
+  background-color: #FAF9F5;
+  background-image:
+    radial-gradient(at 15% 0%, rgba(16, 185, 129, 0.06) 0px, transparent 45%),
+    radial-gradient(at 85% 5%, rgba(255, 107, 74, 0.05) 0px, transparent 40%),
+    radial-gradient(at 50% 95%, rgba(79, 70, 229, 0.04) 0px, transparent 45%),
+    linear-gradient(to right, rgba(20, 21, 23, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 21, 23, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+}
+
+.bento-card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid #E6E3D8;
+  box-shadow: 0 1px 2px rgba(20, 21, 23, 0.03), 0 8px 24px -4px rgba(20, 21, 23, 0.04);
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s ease;
+}
+
+.bento-card:hover {
+  border-color: #D5D0C0;
+  box-shadow: 0 4px 12px rgba(20, 21, 23, 0.05), 0 16px 32px -6px rgba(20, 21, 23, 0.07);
+}
+
+.obsidian-surface {
+  background: linear-gradient(135deg, #181A1E 0%, #101114 100%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 20px 40px -15px rgba(11, 12, 14, 0.32);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
