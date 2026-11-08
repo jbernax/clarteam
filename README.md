@@ -21,7 +21,7 @@ Every organization uses different tools—and many teams want to improve their c
 3. **Microsoft Graph Adapter**: Normalizes Microsoft 365 / Teams calendar metadata.
 4. **Built-in Organization Simulator**: Test 3 realistic organizational scenarios out-of-the-box.
 
-### 💬 Pluggable Coaching & Pulse Channels (`backend/app/providers/channels.py`)
+###  Pluggable Coaching & Pulse Channels (`backend/app/providers/channels.py`)
 1. **Standalone Web Portal**: Works in any browser via privacy-safe links (zero chat bot required).
 2. **Slack Block Kit**: Native interactive blocks for Slack workspaces.
 3. **Microsoft Teams Adaptive Cards**: Native JSON cards for Teams environments.
