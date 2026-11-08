@@ -81,5 +81,5 @@ class MyCalDavProvider(CalendarIngestProvider):
         ...
 ```
 
-## 📄 License
+##  License
 MIT License — see [LICENSE](LICENSE).
