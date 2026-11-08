@@ -11,11 +11,11 @@ Instead of recording audio/video (which violates privacy and erodes trust), **Cl
 
 ---
 
-## ✨ Why Provider-Agnostic & Open Source?
+##  Provider-Agnostic & Open Source
 
 Every organization uses different tools—and many teams want to improve their culture **without waiting months for Enterprise IT API approvals**. ClarTeam decouples its core analytical engine from any single vendor:
 
-### 📥 Pluggable Ingestion Providers (`backend/app/providers/ingest.py`)
+###  Pluggable Ingestion Providers (`backend/app/providers/ingest.py`)
 1. **Universal CSV / ICS Import (Zero IT Setup)**: Upload a standard org chart CSV and calendar export—works with Nextcloud, Fastmail, Google Calendar, Outlook, or Zimbra.
 2. **Google Workspace Adapter**: Normalizes Google Calendar + Directory API events.
 3. **Microsoft Graph Adapter**: Normalizes Microsoft 365 / Teams calendar metadata.
@@ -29,7 +29,7 @@ Every organization uses different tools—and many teams want to improve their c
 
 ---
 
-## 🔒 Privacy & Employee Protection Guarantees
+##  Privacy & Employee Protection Guarantees
 
 Read our full [Employee Privacy & Wellbeing Manifesto](PRIVACY_MANIFESTO.md):
 - **Zero Audio/Video/Transcripts**: Never records or reads private conversations.
@@ -38,7 +38,7 @@ Read our full [Employee Privacy & Wellbeing Manifesto](PRIVACY_MANIFESTO.md):
 
 ---
 
-## 🚀 Quickstart
+##  Quickstart
 
 ### 1. Run Backend (FastAPI + NetworkX)
 ```bash
@@ -64,7 +64,7 @@ npm run dev
 
 ---
 
-## 🔌 Writing a Custom Provider Plugin
+##  Writing a Custom Provider Plugin
 
 Adding a new calendar or HR directory source takes less than 25 lines of Python by implementing `CalendarIngestProvider` in `backend/app/providers/base.py`:
 
